@@ -1,0 +1,135 @@
+@keyframes borda {
+   0%{
+       border: 3px solid rgb(20, 72, 184);
+       transition: 0.5s;
+   }
+   50%{
+       border: 3px solid rgb(20, 116, 184);
+       transition: 0.5s;
+   }
+   100%{
+       border: 3px solid rgb(77, 20, 184);
+       transition: 0.5s;
+   }
+}
+
+*{
+   margin: 0%;
+   padding: 0%;
+}
+
+#pagina{
+   width: 100%;
+   height: 100vh; /* VH - viewport height */
+   background-color: rgb(184, 160, 160);
+   background-image: url(estrelas.jpeg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   background-size: 100% 100%;
+}
+
+main{
+   width: 50%;
+   height: 600px;
+   background-color: rgb(37, 3, 100) ;
+   border-radius: 10px;
+   box-shadow: rgba(88, 5, 243, 0.663) 6px 6px;
+   display: flex;
+   overflow: hidden;
+}
+
+#banner, #formulario{
+   width: 50%;
+   height: 100%;
+}
+
+#banner{
+   background-image: url(constelacao.jpeg);
+   background-size: 100% 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+#efeito{
+   width: 100%;
+   height: 100%;
+   background: rgb(98, 98, 124);
+   background: linear-gradient(90deg, rgba(175, 135, 135, 0) 0%, rgba(90, 40, 228, 0.505) 51%, rgb(37, 3, 100) 100%);
+  
+   
+} 
+
+#formulario{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+   color: rgb(145, 117, 243);
+   margin: 20px 0px;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   font-size: 16pt;
+   color: rgb(204, 201, 245);
+}
+
+input{
+   width: 350px;
+   height: 30px;
+   border-radius: 5px;
+   padding: 5px;
+   transition: 1s;
+}
+
+input:hover{
+   background-color: rgb(122, 137, 252);
+   transition: 0.3s;
+}
+
+input:focus{
+  width: 380px;
+  height: 35px; 
+  transition: 1s;
+  background-color: rgb(163, 172, 245);
+  color: rgb(3, 2, 73);
+  animation: borda 1.5s infinite;
+}
+
+input::placeholder{
+   color: rgb(39, 3, 68);
+}
+
+button{
+   width: 200px;
+   height: 30px;
+   background-color: rgb(28, 16, 109);
+   color: rgb(213, 211, 240);
+   margin: 10px auto;
+   border-radius: 5px;
+   transition: 0.5s;
+}
+
+button:active{
+   background-color: rgb(209, 193, 193);
+   color: rgb(255, 255, 255);
+}
+
+button:hover{
+   width: 250px;
+   height: 35px;
+   background-color: rgb(47, 35, 112);
+   font-weight: bold;
+   transition: 0.5s;
+}
+
+
+

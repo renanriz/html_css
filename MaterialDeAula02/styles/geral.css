@@ -1,0 +1,38 @@
+*{
+   margin: 0%;
+   padding: 0%;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(225, 0, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-image: url(images/imagem\ lua\ 6.jpeg);
+   background-size: cover;
+}
+   
+
+form{
+   width: 15%;
+   padding: 20px;
+   background-color: rgb(140, 99, 175);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   border-radius: 10px;
+   
+}
+
+h1{
+   color: rgb(172, 52, 219);
+}
+
+h3{
+   color: rgb(178, 174, 180);
+}
